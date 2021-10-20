@@ -12,6 +12,7 @@ import {
 } from '@ant-design/icons';
 
 const DashboardPage = React.lazy(() => import('pages/DashboardPage'));
+const BlogPage = React.lazy(() => import('pages/BlogPage'));
 
 const Layout1 = ({ children }) => {
   const history = useHistory();
@@ -167,7 +168,7 @@ const Layout1 = ({ children }) => {
               <Content style={{ margin: '106px 24px 0' }}>
                 <Switch>
                   <Route exact path="/dashboard" component={DashboardPage} />
-                  {/* <Route exact path="/devices" component={DevicePage} /> */}
+                  <Route exact path="/blog" component={BlogPage} />
                 </Switch>
               </Content>
             </Layout>

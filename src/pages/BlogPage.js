@@ -1,4 +1,4 @@
-import Devices from 'components/Devices/Device';
+import BPost from 'components/Post/BPost';
 
 const DevicePage = () => {
   return (
@@ -7,7 +7,7 @@ const DevicePage = () => {
         <span className="page_subtitle mb-3">Components</span>
         <p className="page_title">Blog Posts</p>
       </div>
-      <Devices />
+      <BPost />
     </>
   );
 };

@@ -1,0 +1,103 @@
+.grid_1row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 16px;
+  @media screen and (max-width: 540px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid_2row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-gap: 16px;
+  @media screen and (max-width: 540px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid_3row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 16px;
+  @media screen and (max-width: 540px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid_4row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 16px;
+  @media screen and (max-width: 540px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pHead {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #3d5170;
+  font-size: 1.05rem;
+  line-height: 1.25rem;
+}
+.pBody {
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+  color: #727781;
+  font-size: 1.05rem;
+  line-height: 1.25rem;
+}
+.pDate {
+  font-weight: 600;
+  margin: 0.75rem 0;
+  color: #a6abb4;
+  font-size: 1.05rem;
+  line-height: 1.25rem;
+  text-align: justify;
+  font-family: 'Barlow';
+}
+.authN {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #727477;
+  font-family: 'Barlow';
+  font-size: 1.05rem;
+  line-height: 1.25rem;
+}
+
+.cardIMG {
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  min-height: 10.3125rem;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+  background-repeat: no-repeat;
+}
+.cat {
+  top: 0.9375rem;
+  right: 0.9375rem;
+  position: absolute;
+  text-transform: uppercase;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  border-radius: 10rem;
+}
+.avaIMG {
+  transform: translateY(40%);
+  margin-left: 1.5625rem;
+  position: absolute;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 0 0.125rem #fff, 0 0.1875rem 0.4375rem rgb(90 97 105 / 50%);
+}
+.cardB {
+  padding: 1.5625rem;
+}

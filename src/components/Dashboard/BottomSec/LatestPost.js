@@ -1,13 +1,12 @@
 import React from 'react';
 import { Card, Avatar, Button } from 'antd';
-import image from 'assets/new/profile1.svg';
 
 const data = [
   {
     id: 1,
     date: '3 days ago',
     user: {
-      image: image,
+      image: `https://joeschmoe.io/api/v1/random`,
       name: 'John Doe'
     },
     post: {
@@ -19,7 +18,7 @@ const data = [
     id: 2,
     date: '4 days ago',
     user: {
-      image: image,
+      image: `https://joeschmoe.io/api/v1/female/random`,
       name: 'John Doe'
     },
     post: {
@@ -31,7 +30,7 @@ const data = [
     id: 3,
     date: '5 days ago',
     user: {
-      image: image,
+      image: `https://joeschmoe.io/api/v1/male/random`,
       name: 'John Doe'
     },
     post: {
