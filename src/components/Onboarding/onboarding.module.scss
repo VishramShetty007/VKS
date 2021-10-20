@@ -1,0 +1,18 @@
+.content {
+  margin: 0 auto;
+}
+
+.textlink {
+  &,
+  &:hover {
+    color: #3d7edb;
+    font-family: "Barlow", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    text-align: right;
+    text-transform: capitalize;
+  }
+}

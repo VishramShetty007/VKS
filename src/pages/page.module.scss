@@ -1,0 +1,18 @@
+.graphStatusList {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  grid-gap: 16px;
+  @media screen and (max-width: 540px) {
+    grid-template-columns: 1fr;
+  }
+}
+.graph2StatusList {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  grid-gap: 16px;
+  @media screen and (max-width: 540px) {
+    grid-template-columns: 1fr;
+  }
+}

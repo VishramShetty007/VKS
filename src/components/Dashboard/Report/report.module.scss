@@ -1,0 +1,41 @@
+.reportCard {
+  box-shadow: 0 2px 0 rgb(90 97 105 / 11%), 0 4px 8px rgb(90 97 105 / 12%),
+    0 10px 10px rgb(90 97 105 / 6%), 0 7px 70px rgb(90 97 105 / 10%);
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 26px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.count {
+  font-family: 'Lato';
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.reportTitle {
+  color: #1e2e3b;
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.liwrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 24px;
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+  }
+  @media screen and (max-width: 540px) {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}

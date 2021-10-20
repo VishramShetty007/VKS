@@ -1,0 +1,144 @@
+.c-modal {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto;
+  padding: 10px;
+
+  @media (min-width: 767px) {
+    max-width: 80% !important;
+    padding: 70px 40px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 70px 10px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1400px !important;
+  }
+
+  .ant-modal-body {
+    padding: 0;
+  }
+
+  .ant-modal-content {
+    padding: 0px;
+    border-radius: 10px;
+  }
+
+  .ant-modal-close-x {
+    .ant-modal-close-icon {
+      margin-top: 50px !important;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &--normal {
+    width: auto !important;
+
+    @media (min-width: 767px) {
+      max-width: 520px !important;
+    }
+  }
+
+  &--form {
+    width: auto !important;
+
+    .ant-modal-content {
+      padding: 20px;
+
+      @media (min-width: 767px) {
+        padding: 20px 30px;
+      }
+
+      @media (min-width: 992px) {
+        padding: 30px 40px;
+      }
+    }
+
+    @media (min-width: 767px) {
+      max-width: 520px !important;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 720px !important;
+    }
+  }
+}
+
+.ant-modal-wrap,
+.ant-modal-mask {
+  z-index: 2000;
+}
+
+.ant-modal-mask {
+  background-color: rgba(30, 46, 59, 0.5) !important;
+}
+
+.y-modal {
+  width: 100% !important;
+  max-width: 80% !important;
+  margin: 0 auto;
+  // padding  : 40px;
+
+  @media (min-width: 767px) {
+    // padding: 70px 40px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 700px !important;
+    height: 350px;
+  }
+
+  .ant-modal-body {
+    padding: 0;
+  }
+
+  .ant-modal-content {
+    // padding         : 20px;
+    // border-radius   : 8px;
+    background-color: unset;
+    box-shadow: unset;
+    width: 100%;
+    height: 350px;
+  }
+
+  .ant-modal-close-x {
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.ant-modal-close {
+  &,
+  &:active,
+  &:focus {
+    outline: none !important;
+    border: none;
+  }
+}
+
+.ant-modal-close-x {
+  &,
+  &:active,
+  &:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    color: $primary-color;
+  }
+}
+
+// .anticon-check-circle
+// {
+//   display: none;
+// }
+
+.feedbackSucessModal {
+  .anticon-check-circle {
+    display: none;
+  }
+}

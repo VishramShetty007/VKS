@@ -1,0 +1,18 @@
+.r-dropdown {
+    .ant-select-selector {
+        border-radius: 4px !important;
+        border       : 1px solid#b9c4cc !important;
+        padding      : 4px 12px !important;
+        height       : auto !important;
+    }
+
+    .ant-select-selection-item {
+        font-family   : "Montserrat", sans-serif;
+        font-size     : 12px;
+        font-weight   : 600;
+        font-style    : normal;
+        letter-spacing: normal;
+        line-height   : normal;
+        text-align    : left;
+    }
+}

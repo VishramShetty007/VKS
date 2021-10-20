@@ -1,0 +1,46 @@
+.panel {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.02);
+  // margin: 20px 0px 20px 0px;
+  box-shadow: 0 2px 0 rgb(90 97 105 / 11%), 0 4px 8px rgb(90 97 105 / 12%),
+    0 10px 10px rgb(90 97 105 / 6%), 0 7px 70px rgb(90 97 105 / 10%);
+
+  &:last-child {
+    height: -webkit-fill-available;
+  }
+}
+
+.updatetitle {
+  color: #1e2e3b;
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.updateStatus {
+  color: #979797;
+  font-family: 'Lato';
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.DDStatusList {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 16px;
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+  }
+  @media screen and (max-width: 540px) {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}

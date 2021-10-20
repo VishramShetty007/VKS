@@ -1,0 +1,14 @@
+.wrapper {
+  height: 100px;
+  display: flex;
+  width: 100%;
+
+  @media (min-width: 767px) {
+    height: 200px;
+  }
+}
+
+.content {
+  margin: auto;
+  text-align: center;
+}

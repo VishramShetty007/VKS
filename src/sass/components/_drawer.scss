@@ -1,0 +1,21 @@
+.ant-drawer {
+  .ant-drawer-header {
+    background-color: #0069e0;
+  }
+
+  .ant-drawer-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+  }
+
+  &.c-mobileMenu {
+    z-index: 2500;
+
+    .ant-drawer-body {
+      padding: 0;
+    }
+  }
+}

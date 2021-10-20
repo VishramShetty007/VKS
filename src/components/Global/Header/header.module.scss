@@ -1,0 +1,346 @@
+.logo {
+  height: 30px;
+
+  @media (min-width: 576px) {
+    height: 35px;
+  }
+
+  @media (min-width: 767px) {
+    height: 30px;
+  }
+}
+
+.wrapper {
+  padding: 10px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1800;
+  border-bottom: 1px solid #dee3e7;
+
+  @media (min-width: 767px) {
+    padding: 15px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 20px;
+  }
+}
+
+.navListWrapper {
+  display: flex;
+  width: 100%;
+}
+
+.navList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+
+  &.mobileNavList {
+    display: block;
+    width: 100%;
+
+    li {
+      text-align: left;
+      margin-bottom: 20px;
+
+      a {
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    margin: 0 0 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+  }
+
+  li {
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0;
+    position: relative;
+
+    @media (min-width: 1200px) {
+      margin: 0 20px 0 0;
+      padding: 0 20px 0 0;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      top: 45%;
+      bottom: 0;
+      right: 0;
+      height: 60%;
+      width: 1px;
+      transform: translateY(-50%);
+      background-color: #5e5e5e;
+    }
+
+    a {
+      &,
+      &:hover {
+        display: inline-block;
+        padding: 0;
+        color: #5e5e5e;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        text-decoration: none;
+        font-size: 12px;
+        position: relative;
+
+        @media (min-width: 1200px) {
+          font-size: 15px;
+        }
+
+        &:after {
+          position: absolute;
+          content: '';
+          width: 25%;
+          height: 3px;
+          bottom: -5px;
+          border-radius: 2px;
+          left: 0;
+          background-color: #0069e0;
+          transform-origin: left;
+          transform: scaleX(0);
+          transition: transform 0.4s ease;
+        }
+      }
+
+      &.active,
+      &:hover {
+        color: #235297;
+
+        &:after {
+          transform: scaleX(1);
+        }
+      }
+    }
+
+    &:last-child {
+      margin: 0;
+      padding: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.actionsList {
+  display: flex;
+  margin: 0 10px 0 auto;
+  padding: 0;
+  align-items: center;
+
+  @media (min-width: 767px) {
+    margin: 0 20px 0 auto;
+  }
+
+  .actionsListItem {
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 767px) {
+      margin: 0 20px 0 0;
+      padding: 0 20px 0 0;
+    }
+
+    @media (min-width: 1200px) {
+      margin: 0 30px 0 0;
+      padding: 0 30px 0 0;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 1px;
+      background-color: #d3d5d7;
+    }
+
+    &:last-child {
+      margin: 0;
+      padding: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.actionIcons {
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: 992px) {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.brandIcon {
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: 767px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.menuButton {
+  padding: 0;
+  margin: 0 10px 0 0;
+
+  @media (min-width: 992px) {
+    display: none;
+  }
+
+  img {
+    width: 25px;
+    height: auto;
+
+    @media (min-width: 576px) {
+      width: 35px;
+    }
+  }
+}
+
+.mobileMenu {
+  .mobileMenuHeader,
+  .mobileMenuBody {
+    padding: 20px;
+  }
+
+  .mobileMenuHeader {
+    border-bottom: 1px solid #dedede;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.scrolling {
+  background-color: #ffffff;
+  transition: all 0.4s ease;
+}
+
+.logoList {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin: 0 20px 0 0;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: '';
+      background-color: #dedede;
+      width: 1px;
+      height: 80%;
+      right: -12px;
+    }
+
+    &:first-child {
+      display: none;
+
+      @media (min-width: 767px) {
+        display: block;
+      }
+    }
+
+    &:last-child {
+      margin: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.userImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin: 0 5px 0 0;
+}
+
+.navItem {
+  display: flex !important;
+  align-items: center;
+
+  svg {
+    margin: 0 10px 0 0;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.notificationListingItems {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  max-height: 60vh;
+  overflow: auto;
+
+  .img {
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: #ffaa87;
+    padding: 12px;
+    margin-right: 8px;
+
+    img {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+
+.notifications {
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 12px;
+  min-width: 250px;
+
+  @media (min-width: 767px) {
+    min-width: 400px;
+  }
+
+  @media (min-width: 1200px) {
+    min-width: 500px;
+  }
+}

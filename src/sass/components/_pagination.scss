@@ -1,0 +1,56 @@
+.c-pagination {
+  width: 100%;
+
+  .ant-pagination-item {
+    opacity: 0.8;
+    color: #1e2e3b !important;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    background-color: #fff;
+    border: #fff;
+    text-align: center;
+    border-radius: 2px;
+
+    &:hover {
+      border: solid 1px #007bff;
+    }
+
+    a {
+      margin: 4px auto;
+      height: 100%;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 14px;
+    }
+
+    &.ant-pagination-item-active {
+      color: #ffffff;
+      background-color: #007bff;
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  .ant-pagination-next,
+  .ant-pagination-prev {
+    opacity: 0.8;
+    color: #002b45;
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+
+    &.ant-pagination-disabled {
+      opacity: 0.4;
+    }
+  }
+}

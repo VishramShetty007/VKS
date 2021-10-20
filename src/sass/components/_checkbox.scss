@@ -1,0 +1,19 @@
+.segment-multiselect-checkbox {
+  .ant-checkbox {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    z-index: 2;
+  }
+
+  .ant-checkbox-inner {
+    background-color: transparent;
+    border-width: 2px;
+  }
+
+  .ant-checkbox-checked {
+    .ant-checkbox-inner {
+      background-color: $primary-color;
+    }
+  }
+}

@@ -1,0 +1,191 @@
+.fnt-300 {
+  font-weight: 300 !important;
+}
+
+.fnt-400 {
+  font-weight: 400 !important;
+}
+
+.fnt-500 {
+  font-weight: 500 !important;
+}
+
+.fnt-600 {
+  font-weight: 600 !important;
+}
+
+.fnt-700 {
+  font-weight: 700 !important;
+}
+
+.fnt-barlow {
+  font-family: 'Barlow', sans-serif !important;
+}
+
+.fnt-msrt {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.fnt-lato-head {
+  font-family: 'Lato' !important;
+  letter-spacing: 2.4px;
+}
+
+.fnt-lato {
+  font-family: 'Lato' !important;
+}
+
+.fnt-xs {
+  font-size: 14px !important;
+}
+
+.fnt-sm {
+  font-size: 12px !important;
+
+  @media (min-width: 767px) {
+    font-size: 14px !important;
+  }
+}
+
+.fnt-md {
+  font-size: 14px !important;
+
+  @media (min-width: 767px) {
+    font-size: 16px !important;
+  }
+}
+
+.fnt-mlg {
+  font-size: 16px !important;
+
+  @media (min-width: 767px) {
+    font-size: 18px !important;
+  }
+}
+
+.fnt-lg {
+  font-size: 18px !important;
+
+  @media (min-width: 767px) {
+    font-size: 20px !important;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 22px !important;
+  }
+}
+
+.fnt-xl {
+  font-size: 18px !important;
+
+  @media (min-width: 767px) {
+    font-size: 20px !important;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 24px !important;
+  }
+}
+
+.fnt-xxl {
+  font-size: 20px !important;
+
+  @media (min-width: 767px) {
+    font-size: 24px !important;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 28px !important;
+  }
+}
+
+.fnt-xxlg {
+  font-size: 24px !important;
+
+  @media (min-width: 767px) {
+    font-size: 28px !important;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 32px !important;
+  }
+}
+
+.ls-08 {
+  letter-spacing: 0.89px !important;
+}
+
+.ls-1 {
+  letter-spacing: 1px !important;
+}
+
+.ls-02 {
+  letter-spacing: 0.24px !important;
+}
+
+// margin
+
+.mt80 {
+  margin-top: 40px;
+
+  @media (min-width: 768px) {
+    margin-top: 80px;
+  }
+}
+
+// .p80 {
+//   padding: 40px 0;
+
+//   @media (min-width: 768px) {
+//     padding: 80px 0;
+//   }
+// }
+
+.m80 {
+  margin: 40px 0;
+
+  @media (min-width: 768px) {
+    margin: 80px 0;
+  }
+}
+
+.m40 {
+  margin: 20px 0;
+
+  @media (min-width: 768px) {
+    margin: 40px 0;
+  }
+}
+
+// .m60 {
+//   margin: 30px 0;
+
+//   @media (min-width: 768px) {
+//     margin: 60px 0;
+//   }
+// }
+
+.mt40 {
+  margin-top: 20px;
+
+  @media (min-width: 768px) {
+    margin-top: 40px;
+  }
+}
+
+.mt130 {
+  margin-top: 75px;
+
+  @media (min-width: 768px) {
+    margin-top: 130px;
+  }
+}
+
+.txt-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    white-space: nowrap;
+  }
+}
