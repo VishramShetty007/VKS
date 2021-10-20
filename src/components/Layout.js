@@ -88,11 +88,11 @@ const Layout1 = ({ children }) => {
                   </Link>
                 </Menu.Item>
                 <Menu.Item
-                  key="devices"
+                  key="blog"
                   icon={<AppstoreAddOutlined style={{ fontSize: 24 }} />}
                 >
-                  <Link className="MenuLink" to="devices">
-                    Devices
+                  <Link className="MenuLink" to="blog">
+                    Blog
                   </Link>
                 </Menu.Item>
               </Menu>
