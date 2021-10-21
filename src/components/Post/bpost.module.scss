@@ -16,6 +16,10 @@
   @media screen and (max-width: 540px) {
     grid-template-columns: 1fr;
   }
+  .cardDiv {
+    display: flex;
+    flex-flow: row;
+  }
 }
 
 .grid_3row {
@@ -61,6 +65,13 @@
   text-align: justify;
   font-family: 'Barlow';
 }
+.pDate1 {
+  font-weight: 600;
+  color: #a6abb4;
+  font-size: 0.75rem;
+  text-align: justify;
+  font-family: 'Barlow';
+}
 .authN {
   font-weight: 700;
   margin-bottom: 0.75rem;
@@ -68,6 +79,13 @@
   font-family: 'Barlow';
   font-size: 1.05rem;
   line-height: 1.25rem;
+}
+.authN1 {
+  font-weight: 700;
+  margin-bottom: 0 !important;
+  color: #727477;
+  font-family: 'Barlow';
+  font-size: 1.05rem;
 }
 
 .cardIMG {
@@ -98,6 +116,57 @@
   background-color: #fff;
   box-shadow: 0 0 0 0.125rem #fff, 0 0.1875rem 0.4375rem rgb(90 97 105 / 50%);
 }
+.avaIMG1 {
+  transform: translateY(-30%);
+  margin-left: 1.5625rem;
+  position: absolute;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 0 0.125rem #fff, 0 0.1875rem 0.4375rem rgb(90 97 105 / 50%);
+}
+.avaIMG3 {
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 0 0.125rem #fff, 0 0.1875rem 0.4375rem rgb(90 97 105 / 50%);
+}
 .cardB {
   padding: 1.5625rem;
+}
+
+.cardIMG1 {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
+  min-width: 180px;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  min-height: 10.3125rem;
+
+  @media (max-width: 560px) {
+    min-width: 85px;
+  }
+}
+
+.cat1 {
+  right: auto;
+  top: 0.9375rem;
+  left: 0.9375rem;
+  position: absolute;
+  text-transform: uppercase;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  border-radius: 10rem;
+}
+
+.footC {
+  padding: 1rem;
+  display: flex;
+  @media (max-width: 560px) {
+    display: block;
+  }
 }
