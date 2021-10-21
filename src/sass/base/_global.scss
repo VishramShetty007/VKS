@@ -1236,3 +1236,22 @@ ul.ant-menu.ant-menu-root.ant-menu-vertical.ant-menu-light {
 .iconCh {
   font-size: 18;
 }
+
+.shaky {
+  @media (max-width: 560px) {
+    position: relative !important;
+    top: 8px !important;
+    left: -25px !important;
+  }
+}
+.shaky1 {
+  @media (max-width: 560px) {
+    position: relative !important;
+    top: 8px !important;
+    left: -25px !important;
+
+    .chow {
+      display: none !important;
+    }
+  }
+}

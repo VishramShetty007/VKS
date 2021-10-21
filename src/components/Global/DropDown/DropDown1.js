@@ -19,13 +19,13 @@ const menu = (
 
 const Dropdown1 = () => {
   return (
-    <Dropdown overlay={menu} className="ml-2 mr-2">
+    <Dropdown overlay={menu} className="ml-2 shaky1 mr-2">
       <p>
         <Avatar
           src="https://joeschmoe.io/api/v1/random"
           className="avaIMGProf"
         />
-        <DownOutlined className="ml-3" />
+        <DownOutlined className="ml-3 chow" />
       </p>
     </Dropdown>
   );

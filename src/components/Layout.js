@@ -132,7 +132,7 @@ const Layout1 = ({ children }) => {
                 children={
                   layoutHeader && (
                     <div className="d-flex align-items-center p-2 justify-content-between">
-                      <p className="fnt-lato-head text-uppercase fnt-700 fnt-lg ml-4 pt-2 mb-0">
+                      <p className="fnt-lato-head shaky text-uppercase fnt-700 fnt-lg ml-4 pt-2 mb-0">
                         <Search
                           className="customSearch"
                           placeholder="Search"
@@ -141,7 +141,7 @@ const Layout1 = ({ children }) => {
                         />
                       </p>
                       <div className="d-flex align-items-center">
-                        <div className="d-flex align-items-center">
+                        <div className="d-flex shaky align-items-center">
                           <Dropdown2 />
                         </div>
                         <Divider
@@ -150,6 +150,7 @@ const Layout1 = ({ children }) => {
                             borderLeft: '1px solid #e3e3e3'
                           }}
                           type="vertical"
+                          className='shaky'
                         />
                         <Dropdown1 />
                       </div>
