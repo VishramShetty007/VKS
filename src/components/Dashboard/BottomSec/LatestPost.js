@@ -1,5 +1,8 @@
 import React from 'react';
 import { Card, Avatar, Button } from 'antd';
+import { BsFillCheckCircleFill } from 'react-icons/bs';
+import { ImCancelCircle } from 'react-icons/im';
+import { AiFillEdit } from 'react-icons/ai';
 
 const data = [
   {
@@ -58,17 +61,26 @@ const LatestPost = () => (
           />
           <div className="discus">
             <div className="d-flex align-items-center">
-              <p className="fnt-barlow fnt-600 fnt-md">
+              <p className="m-0 p-0 fnt-barlow fnt-600 fnt-md">
                 {item.user.name} on {item.post.title}, {item.date}
               </p>
             </div>
-            <p className="fnt-msrt fnt-300 fnt-xs" style={{ marginTop: -12 }}>
+            <p
+              className="fnt-msrt fnt-300 fnt-xs m-0 p-0"
+              style={{ marginTop: -12 }}
+            >
               {item.content}
             </p>
-            <div className="d-flex align-items-center">
-              <Button className="antd-ghost-btn-primary sm-btn">Accept</Button>
-              <Button className="antd-ghost-btn-primary sm-btn">Reject</Button>
-              <Button className="antd-ghost-btn-primary sm-btn">Edit</Button>
+            <div className="d-flex mt-2 align-items-center">
+              <BsFillCheckCircleFill
+                style={{ fontSize: 16, marginRight: 10, cursor: 'pointer' }}
+              />
+              <ImCancelCircle
+                style={{ fontSize: 16, marginRight: 10, cursor: 'pointer' }}
+              />
+              <AiFillEdit
+                style={{ fontSize: 16, marginRight: 10, cursor: 'pointer' }}
+              />
             </div>
           </div>
         </div>

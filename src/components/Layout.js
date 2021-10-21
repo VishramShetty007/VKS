@@ -1,21 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
-import { Layout, Menu, Button, Divider, message } from 'antd';
-import { Link, useHistory } from 'react-router-dom';
+import { Layout, Menu, Divider } from 'antd';
+import { Link } from 'react-router-dom';
 import { Route, Switch } from 'react-router-dom';
 import ViasatLogo from 'assets/new/VKS.png';
 import useWindowSize from 'Hooks/useWindowSize';
 import {
   FireOutlined,
   AppstoreAddOutlined,
-  UserOutlined
+  SearchOutlined
 } from '@ant-design/icons';
+import Search from 'antd/lib/input/Search';
+import Dropdown1 from './Global/DropDown/DropDown1';
+import Dropdown2 from './Global/DropDown/DropDown2';
 
 const DashboardPage = React.lazy(() => import('pages/DashboardPage'));
 const BlogPage = React.lazy(() => import('pages/BlogPage'));
 
 const Layout1 = ({ children }) => {
-  const history = useHistory();
   const { width } = useWindowSize();
   const { Header, Content, Sider } = Layout;
   const [collapsed, setcollapsed] = useState(true);
@@ -130,16 +132,17 @@ const Layout1 = ({ children }) => {
                 children={
                   layoutHeader && (
                     <div className="d-flex align-items-center p-2 justify-content-between">
-                      <p className="fnt-lato-head text-uppercase fnt-700 fnt-lg ml-4 mb-0"></p>
+                      <p className="fnt-lato-head text-uppercase fnt-700 fnt-lg ml-4 pt-2 mb-0">
+                        <Search
+                          className="customSearch"
+                          placeholder="Search"
+                          allowClear
+                          prefix={<SearchOutlined />}
+                        />
+                      </p>
                       <div className="d-flex align-items-center">
                         <div className="d-flex align-items-center">
-                          <UserOutlined style={{ fontSize: 24 }} />
-                          <p
-                            className="fnt-lato text-capitalize fnt-400 fnt-sm ml-2 mb-0"
-                            style={{ cursor: 'pointer', marginRight: '22px' }}
-                          >
-                            Admin
-                          </p>
+                          <Dropdown2 />
                         </div>
                         <Divider
                           style={{
@@ -148,18 +151,7 @@ const Layout1 = ({ children }) => {
                           }}
                           type="vertical"
                         />
-                        <Button
-                          className="mr-4 antd-ghost-btn"
-                          style={{ marginLeft: '22px' }}
-                          onClick={() => {
-                            message.success('Logging Out...');
-                            setTimeout(() => {
-                              history.push('/');
-                            }, 1500);
-                          }}
-                        >
-                          Logout
-                        </Button>
+                        <Dropdown1 />
                       </div>
                     </div>
                   )
